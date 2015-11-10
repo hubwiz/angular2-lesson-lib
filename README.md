@@ -21,7 +21,7 @@
 由于systemjs的动态加载机制，需要使用一个简单的Web服务器来访问*index.html*。例如使用Python：
 
     ~$ git clone https://github.com/hubwiz/angular2-lesson-lib.git
-	~$ cd android2-lesson-lib
-    ~/android2-lesson-lib$ python -m SimpleHTTPServer
+	~$ cd angular2-lesson-lib
+    ~/angular2-lesson-lib$ python -m SimpleHTTPServer
 
 现在可以使用浏览器访问*http://localhost:8000/*来测试了。	
