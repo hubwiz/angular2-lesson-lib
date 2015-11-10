@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>hello,angular2</title>
+    <!--模块加载器-->
+    <script type="text/javascript" src="lib/system@0.16.11.js"></script>
+    <!--Angular2模块库-->
+    <script type="text/javascript" src="lib/angular2.dev.js"></script>
+	<script>
+    	//设置模块加载规则
+    	System.baseURL = document.baseURI;
+		System.config({
+        	map:{traceur:"lib/traceur"},
+			traceurOptions: {annotations: true}
+		});
+	</script>	    
+</head>
+<body>
+	<!--组件渲染锚点-->
+	<my-app></my-app>
+    
+    <!--定义一个ES6脚本元素-->
+    <script type="module">
+    	//从模块库引入三个类型定义
+        import {Component,View,bootstrap} from "angular2/angular2";
+        
+        //组件定义
+        @Component({selector:"my-app"})
+        @View({template:"<h1>Hello,Angular2</h1>"})
+        class EzApp{}       
+        
+        //渲染组件
+        bootstrap(EzApp);
+    </script>
+</body>
+</html>
