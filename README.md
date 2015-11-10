@@ -1,6 +1,6 @@
 # angular2-lesson-lib
 
-这是汇智网课程[Angular2入门](http://www.hubwiz.com/class/5599d367a164dd0d75929c76)使用的
+这是汇智网课程[Angular2入门](http://www.hubwiz.com/course/5599d367a164dd0d75929c76)使用的
 库文件，你可以下载到本地练习。
 
 文件清单：
